@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f759e88.css",
-    "main.js": "/static/js/main.076cc177.js",
-    "index.html": "/index.html",
-    "main.9f759e88.css.map": "/static/css/main.9f759e88.css.map",
-    "main.076cc177.js.map": "/static/js/main.076cc177.js.map"
+    "main.css": "/beelist/static/css/main.9f759e88.css",
+    "main.js": "/beelist/static/js/main.076cc177.js",
+    "index.html": "/beelist/index.html",
+    "main.9f759e88.css.map": "/beelist/static/css/main.9f759e88.css.map",
+    "main.076cc177.js.map": "/beelist/static/js/main.076cc177.js.map"
   },
   "entrypoints": [
     "static/css/main.9f759e88.css",
