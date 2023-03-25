@@ -1,5 +1,6 @@
 {
   "name": "beelist",
+  "homepage": "https://bco3.github.io/beelist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
