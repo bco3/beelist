@@ -128,9 +128,9 @@
     /* padding: 1rem; */
     /* margin: 0.5rem 1rem 0 0.35rem; */
     /* display: flex; */
-    /* top: 0.3rem; */
+    top: 0.13rem;
     /* left: 50vw; */
-    /* left: 0.3rem; */
+    left: 0.1rem;
     /* bottom: 0em; */
     /* bottom: -15em; */
     /* width: 21em; */
@@ -151,7 +151,7 @@
     height: 2.2rem;
     /* background-color: white; */
     border-radius: 50%;
-    border: 0.23rem solid white;
+    border: 0.25rem solid white;
     /* left: 45vw; */
     background-color: transparent;
     background-size: cover;
