@@ -8,7 +8,7 @@ import "./todo.css";
 import { gsap } from "gsap";
 
 
-export default function Home() {
+function App() {
 
   localForage.config({
     driver: localForage.LOCALSTORAGE,
@@ -229,3 +229,4 @@ export default function Home() {
 </>
   )
 }
+export default App;
