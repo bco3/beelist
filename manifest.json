@@ -3,17 +3,17 @@
   "name": "a Bee's to do list",
   "icons": [
     {
-      "src": "dangler.webp",
+      "src": "zinger.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "dangler.webp",
+      "src": "zinger.webp",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "dangler.webp",
+      "src": "zinger.webp",
       "type": "image/png",
       "sizes": "512x512"
     }
