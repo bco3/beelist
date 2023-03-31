@@ -1,7 +1,3 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import { Inter } from 'next/font/google'
-// import from '@/Home.module.css'
 import React, { useState, useEffect } from "react";
 import localForage from "localforage";
 import "./todo.css";
@@ -164,16 +160,7 @@ function App() {
         ease: "elastic(1,1).inOut",
       });
   }
-  // function handleClick(e) {
-  //   gsap
-  //     .from(e.target, {
-  //       scale: 3,
-  //       duration: 0.3,
-  //     })
-  //     .to(e.target, {
-  //       scale: 1,
-  //     });
-  // }
+
 
   function handleTodoChange(todoIndex : number, e : string) {
     handleClick(e);
@@ -188,10 +175,15 @@ function App() {
       }
     });
     setTodos(updatedTodos);
-    // await localForage.setItem("todos", updatedTodos);
+
   }
 
- 
+ function background (todo) {
+  if(todo.completed === todo.total) {
+    return "#00000037"
+  }
+  return "white"
+ }
    
 
 
@@ -199,20 +191,43 @@ function App() {
     <>
       <div className="container">
       <div className="title">a BEE's TO DO's</div>
-      {/* <div className={container}></div> */}
+
       <div>
-        {todos.map((todo: any, index: number) => (
+        {todos.map((todo: any, index: number) => ( todo.completed !== todo.total &&
           <div className="innercontainer"
             onClick={() => handleTodoChange(index, todo.title)}
+            style ={{ backgroundColor: background(todo) }}
             key= {todo.title + "key"}
           >
             <div className="name">{todo.title}</div>
             <div
               id={todo.title}
               className="headshot"
-              // onClick={() => handleClick(todo.title)}
               style={{
-                backgroundImage: `url("${todo.title}.webp")`,
+                backgroundImage: `url("/beelist/${todo.title}.webp")`,
+              }}
+            ></div>
+            <div className="count">
+              {todo.completed + "/" + todo.total}
+            </div>
+            <div className="description" key={index}>
+              {todo.content}
+            </div>
+          </div>
+        ))}
+        {todos.map((todo: any, index: number) => ( todo.completed === todo.total &&
+          <div className="innercontainer"
+            onClick={() => handleTodoChange(index, todo.title)}
+            style ={{ backgroundColor: background(todo) }}
+            key= {todo.title + "key"}
+          >
+            <div className="name">{todo.title}</div>
+            <div
+              id={todo.title}
+              className="headshot"
+
+              style={{
+                backgroundImage: `url("/beelist/${todo.title}.webp")`,
               }}
             ></div>
             <div className="count">
